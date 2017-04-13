@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Кирилл Боровский](https://up.htmlacademy.ru/htmlcss/17/user/202134).
-* Наставник: [Лиза Позднякова](https://up.htmlacademy.ru/htmlcss/17/user/5608).
+* Наставник: [Малик Киров](https://up.htmlacademy.ru/htmlcss/17/user/17217).
 
 ---
 
