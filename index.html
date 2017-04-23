@@ -33,7 +33,39 @@
         <nav class="main-menu">
           <ul class="list">
             <li class="item">
-              <a class="link">Каталог товаров</a>
+              <a class="link" href="catalog.html">Каталог товаров</a>
+              <ul class="sub-menu">
+                <li class="sub-menu-column">
+                  <ul class="list">
+                    <li class="item">
+                      <a class="link" href="#">Виртуальная реальность</a>
+                    </li>
+                    <li class="item">
+                      <a class="link" href="#">Моноподы для селфи</a>
+                    </li>
+                    <li class="item">
+                      <a class="link" href="#">Экшн-камеры</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="column">
+                  <ul class="list">
+                    <li class="item">
+                      <a class="link" href="#">Фитнесс-браслеты</a>
+                    </li>
+                    <li class="item">
+                      <a class="link" href="#">Умные часы</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="column">
+                  <ul class="list">
+                    <li class="item">
+                      <a class="link" href="#">Квадрокоптеры</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
             </li>
             <li class="item">
               <a class="link" href="#">Доставка</a>
@@ -46,36 +78,13 @@
             </li>
           </ul>
         </nav>
-        <div class="catalog-menu">
-          <ul class="list">
-            <li class="item">
-              <a class="link" href="#">Виртуальная реальность</a>
-            </li>
-            <li class="item">
-              <a class="link" href="#">Моноподы для селфи</a>
-            </li>
-            <li class="item">
-              <a class="link" href="#">Экшн-камеры</a>
-            </li>
-          </ul>
-          <ul class="list">
-            <li class="item">
-              <a class="link" href="#">Фитнесс-браслеты</a>
-            </li>
-            <li class="item">
-              <a class="link" href="#">Умные часы</a>
-            </li>
-          </ul>
-          <ul class="list">
-            <li class="item">
-              <a class="link" href="#">Квадрокоптеры</a>
-            </li>
-          </ul>
-        </div>
       </div>
     </header>
     <main class="container">
       <section class="index-hero">
+        <input id="slider-hero-1" type="radio" name="slider-hero" checked>
+        <input id="slider-hero-2" type="radio" name="slider-hero">
+        <input id="slider-hero-3" type="radio" name="slider-hero">
         <div class="slider">
           <div class="slide slide-1">
             <figure class="images">
@@ -142,9 +151,9 @@
           </div>
         </div>
         <div class="dots">
-          <div class="dot active"></div>
-          <div class="dot"></div>
-          <div class="dot"></div>
+          <label class="dot" for="slider-hero-1"></label>
+          <label class="dot" for="slider-hero-2"></label>
+          <label class="dot" for="slider-hero-3"></label>
         </div>
       </section>
       <section class="index-categories">
@@ -152,51 +161,66 @@
           <li class="category">
             <a class="link" href="#">
               <img class="image" src="http://placehold.it/160x160" width="160" height="160" alt="Изображение раздела каталога «Виртуальная реальность»">
+            </a>
+            <a class="link" href="#">
               <span class="text">Виртуальная реальность</span>
             </a>
           </li>
           <li class="category">
             <a class="link" href="#">
               <img class="image" src="http://placehold.it/160x160" width="160" height="160" alt="Изображение раздела каталога «Моноподы для селфи»">
+            </a>
+            <a class="link" href="#">
               <span class="text">Моноподы для&nbsp;селфи</span>
             </a>
           </li>
           <li class="category">
             <a class="link" href="#">
               <img class="image" src="http://placehold.it/160x160" width="160" height="160" alt="Изображение раздела каталога «Экшн-камеры»">
+            </a>
+            <a class="link" href="#">
               <span class="text">Экшн-камеры</span>
             </a>
           </li>
           <li class="category">
             <a class="link" href="#">
               <img class="image" src="http://placehold.it/160x160" width="160" height="160" alt="Изображение раздела каталога «Фитнес-браслеты»">
+            </a>
+            <a class="link" href="#">
               <span class="text">Фитнес-браслеты</span>
             </a>
           </li>
           <li class="category">
             <a class="link" href="#">
               <img class="image" src="http://placehold.it/160x160" width="160" height="160" alt="Изображение раздела каталога «Умные часы»">
+            </a>
+            <a class="link" href="#">
               <span class="text">Умные часы</span>
             </a>
           </li>
           <li class="category">
             <a class="link" href="#">
               <img class="image" src="http://placehold.it/160x160" width="160" height="160" alt="Изображение раздела каталога «Квадрокоптеры»">
+            </a>
+            <a class="link" href="#">
               <span class="text">Квадрокоптеры</span>
             </a>
           </li>
         </ul>
       </section>
       <section class="index-services">
+        <input id="slider-services-1" type="radio" name="slider-services" checked>
+        <input id="slider-services-2" type="radio" name="slider-services">
+        <input id="slider-services-3" type="radio" name="slider-services">
         <ul class="list">
           <li class="item">
-            <a class="link" href="#">Доставка</a>
+            <label class="link" for="slider-services-1">Доставка</label>
           </li>
           <li class="item">
-            <a class="link" href="#">Гарантия</a>
+            <label class="link" for="slider-services-2">Гарантия</label>
           </li>
           <li class="item">
-            <a class="link" href="#">Кредит</a>
+            <label class="link" for="slider-services-3">Кредит</label>
           </li>
         </ul>
         <div class="slider">
@@ -230,46 +254,48 @@
           </li>
         </ul>
       </section>
-      <section class="index-about">
-        <h2 class="title">О нас</h2>
-        <p class="text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-        <p class="text">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-        <ul class="list">
-          <li class="item">Деловые линии</li>
-          <li class="item">Автотрейдинг</li>
-          <li class="item">ЖелДорЭкспедиция</li>
-        </ul>
-        <a class="link" href="#">Подробнее о нас</a>
-      </section>
-      <section class="index-contacts">
-        <h2 class="title">Контакты</h2>
-        <p class="text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-        <a class="map" href="#">
-          <img class="image" src="http://placehold.it/560x222" width="560" height="222" alt="DEVICE на карте. Город Москва, улица Строителей, дом 15.">
-        </a>
-        <a class="link" href="#">Напишите нам</a>
-      </section>
-      <section class="index-write-us">
-        <button class="close" type="button">Закрыть</button>
-        <form method="post" action="https://echo.htmlacademy.ru">
-          <label class="label">
-            Ваше имя:
-            <input class="input" type="text" name="write-us-name" placeholder="Представьтесь, пожалуйста">
-          </label>
-          <label class="label">
-            Ваш e-mail:
-            <input class="input" type="email" name="write-us-email" placeholder="Для отправки ответа">
-          </label>
-          <label class="label">
-            Текст письма:
-            <textarea class="textarea" name="write-us-text" placeholder="В свободной форме"></textarea>
-          </label>
-          <input class="button" type="submit" name="write-us-submit" value="Отправить">
-        </form>
-      </section>
-      <section class="index-map-popup">
-        <button class="close" type="button">Закрыть</button>
-      </section>
+      <div class="index-info">
+        <section class="index-about">
+          <h2 class="title">О нас</h2>
+          <p class="text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+          <p class="text">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+          <ul class="list">
+            <li class="item">Деловые линии</li>
+            <li class="item">Автотрейдинг</li>
+            <li class="item">ЖелДорЭкспедиция</li>
+          </ul>
+          <a class="link" href="#">Подробнее о нас</a>
+        </section>
+        <section class="index-contacts">
+          <h2 class="title">Контакты</h2>
+          <p class="text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+          <a class="map" href="#">
+            <img class="image" src="http://placehold.it/560x222" width="560" height="222" alt="DEVICE на карте. Город Москва, улица Строителей, дом 15.">
+          </a>
+          <a class="link" href="#">Напишите нам</a>
+        </section>
+        <div class="index-write-us">
+          <button class="close" type="button">Закрыть</button>
+          <form method="post" action="https://echo.htmlacademy.ru">
+            <label class="label">
+              Ваше имя:
+              <input class="input" type="text" name="write-us-name" placeholder="Представьтесь, пожалуйста">
+            </label>
+            <label class="label">
+              Ваш e-mail:
+              <input class="input" type="email" name="write-us-email" placeholder="Для отправки ответа">
+            </label>
+            <label class="label">
+              Текст письма:
+              <textarea class="textarea" name="write-us-text" placeholder="В свободной форме"></textarea>
+            </label>
+            <input class="button" type="submit" name="write-us-submit" value="Отправить">
+          </form>
+        </div>
+        <div class="index-map-popup">
+          <button class="close" type="button">Закрыть</button>
+        </div>
+      </div>
     </main>
     <footer class="main-footer">
       <div class="container">

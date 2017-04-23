@@ -33,7 +33,39 @@
         <nav class="main-menu">
           <ul class="list">
             <li class="item">
-              <a class="link" href="catalog.html">Каталог товаров</a>
+              <a class="link">Каталог товаров</a>
+              <ul class="sub-menu">
+                <li class="sub-menu-column">
+                  <ul class="list">
+                    <li class="item">
+                      <a class="link" href="#">Виртуальная реальность</a>
+                    </li>
+                    <li class="item">
+                      <a class="link" href="#">Моноподы для селфи</a>
+                    </li>
+                    <li class="item">
+                      <a class="link" href="#">Экшн-камеры</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="column">
+                  <ul class="list">
+                    <li class="item">
+                      <a class="link" href="#">Фитнесс-браслеты</a>
+                    </li>
+                    <li class="item">
+                      <a class="link" href="#">Умные часы</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="column">
+                  <ul class="list">
+                    <li class="item">
+                      <a class="link" href="#">Квадрокоптеры</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
             </li>
             <li class="item">
               <a class="link" href="#">Доставка</a>
@@ -46,51 +78,25 @@
             </li>
           </ul>
         </nav>
-        <div class="catalog-menu">
-          <ul class="list">
-            <li class="item">
-              <a class="link" href="#">Виртуальная реальность</a>
-            </li>
-            <li class="item">
-              <a class="link" href="#">Моноподы для селфи</a>
-            </li>
-            <li class="item">
-              <a class="link" href="#">Экшн-камеры</a>
-            </li>
-          </ul>
-          <ul class="list">
-            <li class="item">
-              <a class="link" href="#">Фитнесс-браслеты</a>
-            </li>
-            <li class="item">
-              <a class="link" href="#">Умные часы</a>
-            </li>
-          </ul>
-          <ul class="list">
-            <li class="item">
-              <a class="link" href="#">Квадрокоптеры</a>
-            </li>
-          </ul>
-        </div>
       </div>
     </header>
     <main class="container">
       <header class="catalog-header">
         <h1 class="title">Моноподы для селфи</h1>
-        <div class="breadcrumbs">
-          <ul class="list">
-            <li class="item">
-              <a class="link" href="#">Главная</a>
-            </li>
-            <li class="item">
-              <a class="link" href="#">Каталог товаров</a>
-            </li>
-            <li class="item">
-              <a class="link" href="#">Моноподы для селфи</a>
-            </li>
-          </ul>
-        </div>
       </header>
+      <div class="breadcrumbs">
+        <ul class="list">
+          <li class="item">
+            <a class="link" href="#">Главная</a>
+          </li>
+          <li class="item">
+            <a class="link" href="#">Каталог товаров</a>
+          </li>
+          <li class="item">
+            <a class="link" href="#">Моноподы для селфи</a>
+          </li>
+        </ul>
+      </div>
       <aside class="catalog-sidebar">
         <header class="title-block">
           <h3 class="title">Фильтр:</h3>
@@ -114,37 +120,23 @@
             </fieldset>
             <fieldset class="item item-color">
               <legend class="title">Цвет</legend>
-              <label class="label">
-                <input class="input" type="checkbox" name="filter-color" value="black" checked>
-                Чёрный
-              </label>
-              <label class="label">
-                <input class="input" type="checkbox" name="filter-color" value="white">
-                Белый
-              </label>
-              <label class="label">
-                <input class="input" type="checkbox" name="filter-color" value="blue" checked>
-                Синий
-              </label>
-              <label class="label">
-                <input class="input" type="checkbox" name="filter-color" value="red" checked>
-                Красный
-              </label>
-              <label class="label">
-                <input class="input" type="checkbox" name="filter-color" value="pink">
-                Розовый
-              </label>
+              <input class="input" id="filter-color-black" type="checkbox" name="filter-color" value="black" checked>
+              <label class="label" for="filter-color-black">Чёрный</label>
+              <input class="input" id="filter-color-white" type="checkbox" name="filter-color" value="white">
+              <label class="label" for="filter-color-white">Белый</label>
+              <input class="input" id="filter-color-blue" type="checkbox" name="filter-color" value="blue" checked>
+              <label class="label" for="filter-color-blue">Синий</label>
+              <input class="input" id="filter-color-red" type="checkbox" name="filter-color" value="red" checked>
+              <label class="label" for="filter-color-red">Красный</label>
+              <input class="input" id="filter-color-pink" type="checkbox" name="filter-color" value="pink">
+              <label class="label" for="filter-color-pink">Розовый</label>
             </fieldset>
             <fieldset class="item item-bluetooth">
               <legend class="title">Bluetooth</legend>
-              <label class="label">
-                <input class="input" type="radio" name="filter-bluetooth" value="true">
-                Есть
-              </label>
-              <label class="label">
-                <input class="input" type="radio" name="filter-bluetooth" value="false">
-                Нет
-              </label>
+              <input class="input" id="filter-bluetooth-true" type="radio" name="filter-bluetooth" value="true">
+              <label class="label" for="filter-bluetooth-true">Есть</label>
+              <input class="input" id="filter-bluetooth-false" type="radio" name="filter-bluetooth" value="false">
+              <label class="label" for="filter-bluetooth-false">Нет</label>
             </fieldset>
             <input class="button" type="submit" name="filter-submit" value="Показать">
           </form>
