@@ -1,0 +1,23 @@
+body {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 30px;
+  font-family: "Open Sans", Arial, sans-serif;
+  color: #464646;
+}
+
+.catalog-header .title {
+  font-weight: 800;
+  font-size: 47px;
+  line-height: auto;
+  font-family: "Gilroy", Arial, sans-serif;
+  color: #000000;
+}
+
+.index-info .title {
+  font-weight: 800;
+  font-size: 47px;
+  line-height: auto;
+  font-family: "Gilroy", Arial, sans-serif;
+  color: #000000;
+}
