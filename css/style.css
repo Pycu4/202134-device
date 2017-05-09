@@ -1,10 +1,49 @@
 /* COMMON */
 
-  @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400&subset=cyrillic');
+  /* Open Sans */
+  @font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans'), local('OpenSans'),
+         url('../fonts/opensans.woff2') format('woff2'),
+         url('../fonts/opensans.woff2') format('woff');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  /* Open Sans Light */
+  @font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans Light'), local('OpenSansLight'), local('OpenSans Light'),
+         url('../fonts/opensanslight.woff2') format('woff2'),
+         url('../fonts/opensanslight.woff2') format('woff');
+    font-weight: 100;
+    font-style: normal;   
+  }
+
+  /* Gilroy Light */
+  @font-face {
+    font-family: 'Gilroy';
+    src: local('Gilroy Light'), local('GilroyLight'),
+         url('../fonts/gilroylight.woff2') format('woff2'),
+         url('../fonts/gilroylight.woff2') format('woff');
+    font-weight: 100;
+    font-style: normal;
+  }
+
+  /* Gilroy Extra Bold */
+  @font-face {
+    font-family: 'Gilroy';
+    src: local('Gilroy Extra Bold'), local('Gilroy ExtraBold'), local('GilroyExtraBold'),
+         url('../fonts/gilroyextrabold.woff2') format('woff2'),
+         url('../fonts/gilroyextrabold.woff2') format('woff');
+    font-weight: 900;
+    font-style: normal;
+  }  
 
   body {
+    min-width: 1160px;
     margin: 0px;
-    padding: 0px;
+    padding: 0px 20px;
 
     font-weight: 300;
     font-size: 15px;
@@ -257,15 +296,19 @@
   /* main menu */
 
     .main-header .main-menu {
-      width: 1040px;
+      width: 1041px;
       height: 50px;
       margin-top: 16px;
       margin-bottom: 36px;
       padding-right: 60px;
-      padding-left: 60px;
+      padding-left: 59px;
     }
 
     .main-menu .menu-list {
+      height: 22px;
+      padding-top: 3px;
+      padding-right: 0px;
+      padding-bottom: 25px;
       padding-left: 0px;
 
       font-size: 0px;
@@ -273,6 +316,7 @@
 
     .main-menu .menu-item {
       display: inline-block;
+      height: 22px;
 
       vertical-align: top;
     }
@@ -280,6 +324,7 @@
     .menu-item a {
       font-weight: 800;
       font-size: 18px;
+      line-height: 22px;
       font-family: 'Gilroy', sans-serif;
       letter-spacing: 0.2em;
       text-decoration: none;
