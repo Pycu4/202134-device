@@ -3,26 +3,27 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
       <div class="container container-long">
         <div class="header-logo">
           <a>
-            <img src="img/logo.png" width="1 64" height="36" alt="Логотип интернет-магазин «Девайс»">
+            <img src="img/logo.png" width="164" height="36" alt="Логотип интернет-магазин «Девайс»">
           </a>
         </div>
         <div class="header-top">
           <div class="search-block">
             <form method="post">
-              <input type="text" name="search-text" placeholder="Поиск по сайту">
-              <input type="submit" name="search-submit" value="Найти">
+              <label for="search-text"></label>
+              <input class="input-search" id="search-text" type="text" name="search-text" placeholder="Поиск по сайту">
+              <input class="button button-search" type="submit" name="search-submit" value="Найти">
             </form>
           </div>
           <div class="account-block">
-            <a href="#">Войти</a>
+            <a href="#" title="">Войти</a>
           </div>
           <div class="compare-block">
             <a href="#">Сравнить</a>
@@ -32,49 +33,49 @@
           </div>
         </div>
         <nav class="main-menu">
-          <ul class="list">
-            <li class="item">
+          <ul class="menu-list">
+            <li class="menu-item">
               <a href="catalog.html">Каталог товаров</a>
-              <ul class="sub-menu">
+              <ul class="sub-menu-list">
                 <li class="sub-menu-column">
-                  <ul class="list">
-                    <li class="item">
+                  <ul class="sub-menu-column-list">
+                    <li class="sub-menu-column-item">
                       <a href="#">Виртуальная реальность</a>
                     </li>
-                    <li class="item">
+                    <li class="sub-menu-column-item">
                       <a href="#">Моноподы для селфи</a>
                     </li>
-                    <li class="item">
+                    <li class="sub-menu-column-item">
                       <a href="#">Экшн-камеры</a>
                     </li>
                   </ul>
                 </li>
-                <li class="column">
-                  <ul class="list">
-                    <li class="item">
+                <li class="sub-menu-column">
+                  <ul class="sub-menu-column-list">
+                    <li class="sub-menu-column-item">
                       <a href="#">Фитнесс-браслеты</a>
                     </li>
-                    <li class="item">
+                    <li class="sub-menu-column-item">
                       <a href="#">Умные часы</a>
                     </li>
                   </ul>
                 </li>
-                <li class="column">
-                  <ul class="list">
-                    <li class="item">
+                <li class="sub-menu-column">
+                  <ul class="sub-menu-column-list">
+                    <li class="sub-menu-column-item">
                       <a href="#">Квадрокоптеры</a>
                     </li>
                   </ul>
                 </li>
               </ul>
             </li>
-            <li class="item">
+            <li class="menu-item">
               <a href="#">Доставка</a>
             </li>
-            <li class="item">
+            <li class="menu-item">
               <a href="#">Гарантия</a>
             </li>
-            <li class="item">
+            <li class="menu-item">
               <a href="#">Контакты</a>
             </li>
           </ul>
@@ -88,7 +89,7 @@
           <input id="slider-hero-2" type="radio" name="slider-hero">
           <input id="slider-hero-3" type="radio" name="slider-hero">
           <div class="slider-hero">
-            <div class="slide-1">
+            <div class="slide">
               <div class="hero-image">
                 <img src="img/slider-1.png" width="384" height="486" alt="Фотография самого длинного монопода для селфи в интернет-магазине Девайс" />
               </div>
@@ -113,7 +114,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide--2">
+            <div class="slide">
               <div class="hero-image">
                 <img src="img/slider-2.png" width="345" height="485" alt="Фотография мотивирующего фитнес-браслета в интернет-магазине Девайс" />
               </div>
@@ -130,7 +131,7 @@
                 </ul>
               </div>
             </div>
-            <div class="slide--3">
+            <div class="slide">
               <div class="hero-image">
                 <img src="img/slider-3.png" width="526" height="334" alt="Фотография квадрокоптера с лазером в интернет-магазине Девайс" />
               </div>
@@ -151,11 +152,11 @@
                 </ul>
               </div>
             </div>
-          </div>
-          <div class="slider-hero-dots">
-            <label for="slider-hero-1"></label>
-            <label for="slider-hero-2"></label>
-            <label for="slider-hero-3"></label>
+            <div class="slider-hero-dots">
+              <label for="slider-hero-1"></label>
+              <label for="slider-hero-2"></label>
+              <label for="slider-hero-3"></label>
+            </div>
           </div>
         </div>
       </section>
@@ -163,52 +164,40 @@
         <div class="container">
           <ul>
             <li>
-              <a href="#">
+              <a class="categories-image" href="#">
                 <img src="img/categories-1.png" width="97" height="55" alt="Изображение раздела каталога «Виртуальная реальность»">
               </a>
-              <a href="#">
-                <span>Виртуальная реальность</span>
-              </a>
+              <a class="categories-capture" href="#">Виртуальная реальность</a>
             </li>
             <li>
-              <a href="#">
+              <a class="categories-image" href="#">
                 <img src="img/categories-2.png" width="86" height="117" alt="Изображение раздела каталога «Моноподы для селфи»">
               </a>
-              <a href="#">
-                <span>Моноподы для&nbsp;селфи</span>
-              </a>
+              <a class="categories-capture" href="#">Моноподы для&nbsp;селфи</a>
             </li>
             <li>
-              <a href="#">
+              <a class="categories-image" href="#">
                 <img src="img/categories-3.png" width="71" height="87" alt="Изображение раздела каталога «Экшн-камеры»">
               </a>
-              <a href="#">
-                <span>Экшн-камеры</span>
-              </a>
+              <a class="categories-capture" href="#">Экшн-камеры</a>
             </li>
             <li>
-              <a href="#">
+              <a class="categories-image" href="#">
                 <img src="img/categories-4.png" width="107" height="65" alt="Изображение раздела каталога «Фитнес-браслеты»">
               </a>
-              <a href="#">
-                <span>Фитнес-браслеты</span>
-              </a>
+              <a class="categories-capture" href="#">Фитнес-браслеты</a>
             </li>
             <li>
-              <a href="#">
+              <a class="categories-image" href="#">
                 <img src="img/categories-5.png" width="56" height="98" alt="Изображение раздела каталога «Умные часы»">
               </a>
-              <a href="#">
-                <span>Умные часы</span>
-              </a>
+              <a class="categories-capture" href="#">Умные часы</a>
             </li>
             <li>
-              <a href="#">
+              <a class="categories-image" href="#">
                 <img src="img/categories-6.png" width="132" height="69" alt="Изображение раздела каталога «Квадрокоптеры»">
               </a>
-              <a href="#">
-                <span>Квадрокоптеры</span>
-              </a>
+              <a class="categories-capture" href="#">Квадрокоптеры</a>
             </li>
           </ul>
         </div>
