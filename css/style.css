@@ -462,12 +462,12 @@
     border-color: rgba(0, 0, 0, 0.4);
   }
 
-  .slider-hero-dots label:active, {
+  .slider-hero-dots label:active {
     border-color: rgba(0, 0, 0, 1);
   }
 
   #slider-hero-1:checked ~ .slider-hero-dots label:nth-child(1):checked,
-  #slider-hero-2:checked ~ .slider-hero-dots label:nth-child(2):checked,
+  #slider-hero-2:checked ~ .slideider-hero-dots label:nth-child(2):checked,
   #slider-hero-3:checked ~ .slider-hero-dots label:nth-child(3):checked {
     border-color: rgba(0, 0, 0, 1);
   }
@@ -557,7 +557,7 @@
   .catalog-header .title {
     font-weight: 800;
     font-size: 47px;
-    line-height: auto;
+    line-height: 56px;
     font-family: "Gilroy", Arial, sans-serif;
     color: #000000;
   }
@@ -565,7 +565,7 @@
   .index-info .title {
     font-weight: 800;
     font-size: 47px;
-    line-height: auto;
+    line-height: 56px;
     font-family: "Gilroy", Arial, sans-serif;
     color: #000000;
   }
