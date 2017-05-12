@@ -754,6 +754,8 @@
   /* services slides */  
 
     .index-services .services {
+      position: relative;
+
       float: left;
       width: 460px;
       min-height: 186px;
@@ -764,9 +766,9 @@
 
     }
 
-    .services .service-1,
-    .services .service-2,
-    .services .service-3 {
+    .index-services .service-1,
+    .index-services .service-2,
+    .index-services .service-3 {
       display: none;
     }
 
@@ -776,29 +778,82 @@
       display: block;
     }    
 
-    #slider-services-1:checked ~ .index-services label:nth-child(1),
-    #slider-services-2:checked ~ .index-services label:nth-child(2),
-    #slider-services-3:checked ~ .index-services label:nth-child(3) {
+    #slider-services-1:checked ~ ul label[for="slider-services-1"],
+    #slider-services-2:checked ~ ul label[for="slider-services-2"],
+    #slider-services-3:checked ~ ul label[for="slider-services-3"] {
       color: rgb(247, 225, 132);
     } 
 
-    #slider-services-1:checked ~ .index-services label:nth-child(1)::after,
-    #slider-services-2:checked ~ .index-services label:nth-child(2)::after,
-    #slider-services-3:checked ~ .index-services label:nth-child(3)::after {
+    #slider-services-1:checked ~ ul label[for="slider-services-1"]::after,
+    #slider-services-2:checked ~ ul label[for="slider-services-2"]::after,
+    #slider-services-3:checked ~ ul label[for="slider-services-3"]::after {
+      top: 0px;
+      bottom: 0px;
+      
       width: 278px;
+      height: 40px;
 
       background-color: rgb(0, 0, 0);
     }         
 
     .index-services h2 {
+      margin-bottom: 28px;
+
       font-weight: 900;
       font-size: 47px;
       line-height: 56px;
       font-family: "Gilroy", Arial, sans-serif;
       color: rgb(0, 0, 0);
       letter-spacing: 0.15px;
-      text-decoration: none;      
     }
+
+    .index-services p {
+      font-weight: 100;
+      font-size: 15px;
+      line-height: 30px;
+      font-family: "Open Sans", Arial, sans-serif;
+      color: rgb(70, 70, 70);
+      letter-spacing: 0.15px;
+    }
+
+    .index-services .service-1::after {
+      content: "";
+
+      position: absolute;
+      top: 5px;
+      right: 86px;
+
+      width: 136px;
+      height: 164px;
+
+      background-image: url("../img/delivery.png");
+    }
+
+    .index-services .service-2::after {
+      content: "";
+
+      position: absolute;
+      top: -20px;
+      right: 66px;
+
+      width: 171px;
+      height: 195px;
+
+      background-image: url("../img/warranty.png");
+    }  
+
+    .index-services .service-3::after {
+      content: "";
+
+      position: absolute;
+      top: -21px;
+      right: 92px;
+
+      width: 156px;
+      height: 188px;
+
+      background-image: url("../img/credit.png");
+    }        
 
 /* FOOTER */
 
