@@ -1045,6 +1045,8 @@
     .index-contacts .map-link {
       display: block;
       margin-bottom: 70px;
+
+      line-height: normal;
     }
 
     .index-contacts img {
@@ -1060,14 +1062,29 @@
 /* FOOTER */
 
   .main-footer {
-
-  }
-
-  .main-footer .container {
     min-height: 185px;
+    margin-top: 82px;
 
-    background-color: rgba(240, 197, 46, 0.5);
+    background-color: rgb(70, 70, 70);
   }
+
+  /* footer left */
+
+    .main-footer .footer-left {
+      float: left;
+      width: 360px;
+    }
+
+  .main-footer .footer-center {
+    float: left;
+    width: 440px;
+  }
+
+  .main-footer .footer-right {
+    float: left;
+    width: 360px;
+  }
+
 
 /* TO DO */
 
