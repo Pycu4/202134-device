@@ -82,6 +82,12 @@
     margin-left: auto;
   }
 
+  .clearfix {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
   .button {
     position: relative;
 
@@ -670,7 +676,7 @@
   .index-services {
     position: relative;
 
-    min-height: 388px;
+    padding-bottom: 68px;
   }
 
   .index-services .container {
@@ -681,13 +687,13 @@
     content: "";
     
     position: absolute;
-    top: 20px;
     left: 0px;
+    bottom: 0px;
     z-index: -1;
 
     display: block;
     width: 100%; 
-    height: 288px;
+    height: 93.5%;
 
     background-color: rgb(229, 229, 229);
   }  
@@ -724,7 +730,7 @@
 
       display: block;
       width: 7px; 
-      height: 320px;
+      height: 133.33%;
 
       background-color: rgb(0, 0, 0);           
     }
@@ -857,7 +863,8 @@
 /* INDEX BRANDS */
 
   .index-brands {
-
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 
   .index-brands .container {
@@ -898,8 +905,6 @@
     opacity: 1;
   }  
 
-
-
 /* INDEX INFO */
 
   .index-info {
@@ -918,11 +923,25 @@
   } 
 
   .index-info h2 {
+    margin-bottom: 48px;
 
+    font-weight: 900;
+    font-size: 47px;
+    line-height: 56px;
+    font-family: "Gilroy", Arial, sans-serif;
+    color: rgb(0, 0, 0);
+    letter-spacing: 0.15px;
   }  
 
   .index-info p {
+    margin-bottom: 42px;
 
+    font-weight: 100;
+    font-size: 15px;
+    line-height: 30px;
+    font-family: "Open Sans", Arial, sans-serif;
+    color: rgb(70, 70, 70);
+    letter-spacing: 0px;
   } 
 
   .index-info ul {
@@ -937,6 +956,15 @@
 
   }
 
+  .index-info .index-about,
+  .index-info .index-contacts {
+    position: relative;
+
+    float: left;
+    width: 560px;
+    padding-top: 52px;
+  }
+
   .index-info .index-about::before,
   .index-info .index-contacts::before {
     content: "";
@@ -946,19 +974,60 @@
     left: 0px;
 
     display: block;
-    width: 100px;
-    height: 5px;
+    width: 80px;
+    height: 6px;
 
     background-color: rgb(0, 0, 0);
   }
+  
+  .index-info .button-contacts,
+  .index-info .button-about {
+    display: table;
+    min-width: 260px;
+  }
+
 
   /* index about */
 
     .index-info .index-about {
+      margin-right: 40px;
+    }
+
+    .index-about ul {
+      margin-bottom: 70px;
+
+      list-style-type: none;
+    }
+
+    .index-about li {
       position: relative;
 
+      padding-left: 34px;
+
+      font-weight: 900;
+      font-size: 16px;
+      line-height: 40px;
+      font-family: "Gilroy", Arial, sans-serif;
+      color: rgb(0, 0, 0);
+      letter-spacing: 0px;      
+    }
+
+    .index-about li::before {
+      content: "";
+
+      position: absolute;
+      top: 15px;
+      left: 0px;
+
+      display: block;
       float: left;
-      width: 500px;
+      width: 4px;
+      height: 4px;
+
+      border-width: 3px;
+      border-style: solid;
+      border-color: rgba(0, 0, 0, 0.3);
+      border-radius: 4px;
     }
 
   /* index write us */    
@@ -970,11 +1039,13 @@
   /* index contacts */
   
     .index-info .index-contacts {
-      position: relative;
 
-      float: left;
-      width: 500px;
     }  
+
+    .index-contacts .map-link {
+      display: block;
+      margin-bottom: 70px;
+    }
 
     .index-contacts img {
 
