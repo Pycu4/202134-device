@@ -70,10 +70,14 @@
   ul {
     margin: 0px;
     padding: 0px;
+
+    line-height: normal;
   }
 
   li {
     min-width: 100px;
+
+    line-height: normal;
   }
 
   .container {
@@ -944,18 +948,6 @@
     letter-spacing: 0px;
   } 
 
-  .index-info ul {
-
-  }     
-
-  .index-info li {
-
-  } 
-
-  .index-info .button {
-
-  }
-
   .index-info .index-about,
   .index-info .index-contacts {
     position: relative;
@@ -1062,7 +1054,7 @@
 /* FOOTER */
 
   .main-footer {
-    min-height: 185px;
+    min-height: 323px;
     margin-top: 82px;
 
     background-color: rgb(70, 70, 70);
@@ -1075,15 +1067,118 @@
       width: 360px;
     }
 
-  .main-footer .footer-center {
-    float: left;
-    width: 440px;
-  }
+    .footer-left .footer-logo {
+      height: 36px;
+      margin-top: 64px;
+      margin-bottom: 40px;
+    }
 
-  .main-footer .footer-right {
-    float: left;
-    width: 360px;
-  }
+    .footer-logo a {
+      display: inline-block;
+    }
+
+    .footer-logo img {
+      display: block;
+    }
+
+    .footer-left .footer-address {
+      font-weight: 100;
+      font-size: 15px;
+      line-height: 30px;
+      font-family: "Open Sans", Arial, sans-serif;
+      color: rgb(255, 255, 255);
+      letter-spacing: 0px;      
+    }
+
+  /* footer center */
+
+    .main-footer .footer-center {
+      float: left;
+      width: 440px;
+    }
+
+    .footer-center .footer-menu {
+      width: 440px;
+      min-height: 22px;
+      margin-top: 144px;
+
+    }
+
+    .footer-menu ul {
+      list-style-type: none;
+      text-align: center;
+    }
+
+    .footer-menu li {
+      display: inline-block;
+      margin-right: 33px;
+    }
+
+    .footer-menu li:last-child {
+      margin-right: 0px;
+    }    
+
+    .footer-menu a {
+      font-weight: 900;
+      font-size: 18px;
+      line-height: 22px;
+      font-family: "Gilroy", Arial, sans-serif;
+      color: rgb(255, 255, 255);
+      letter-spacing: 3.6px; 
+      text-decoration: none;  
+      text-transform: uppercase;       
+    }
+
+    .footer-center .footer-social {
+      width: 440px;
+      min-height: 38px;
+      margin-top: 66px;
+
+    }
+
+    .footer-socialsocial ul {
+      list-style-type: none;
+      text-align: center;
+    }
+
+    .footer-social li {
+      display: inline-block;
+      width: 39px;
+      height: 38px;
+      margin-right: 15px;
+    }
+
+    .footer-social li:last-child {
+      margin-right: 0px;
+    }    
+
+    .footer-social a {
+      display: inline-block;
+      width: 39px;
+      height: 38px;   
+      
+      opacity: 0.3;   
+    } 
+
+    .footer-social a:hover {
+      opacity: 1;   
+    }     
+
+    .footer-social a:active {
+      opacity: 0.1;   
+    }     
+
+
+    .footer-social img {
+       
+    }    
+
+  /* footer right */
+
+    .main-footer .footer-right {
+      float: left;
+      width: 360px;
+    }
 
 
 /* TO DO */
