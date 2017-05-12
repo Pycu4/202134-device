@@ -606,7 +606,7 @@
 /* INDEX CATEGORIES */
 
     .index-categories {
-      margin-bottom: 46px;
+      margin-bottom: 126px;
     }
 
     .index-categories .container {
@@ -671,7 +671,6 @@
     position: relative;
 
     min-height: 388px;
-    margin-top: 126px;
   }
 
   .index-services .container {
@@ -866,21 +865,40 @@
   }
 
   .index-brands ul {
+    font-size: 0px;
+    line-height: normal;
+
     list-style-type: none;
   }
 
   .index-brands li {
     display: inline-block;
+    margin-right: 40px; 
 
-    font-size: 0px;
+    font-size: 15px;
   }
 
+  .index-brands li:last-child {
+    margin-right: 0px;
+  }
+
+
   .index-brands img {
-    font-size: 15px;
+    display: block;
+    max-width: 100%;
+    height: auto;    
+    margin: 0px auto;
 
     filter: grayscale(1);
     opacity: 0.2;
   }
+
+  .index-brands img:hover {
+    filter: grayscale(0);
+    opacity: 1;
+  }  
+
+
 
 /* INDEX INFO */
 
